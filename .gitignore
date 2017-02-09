@@ -28,3 +28,4 @@ build/
 .hg
 .svn
 CVS
+/Podfile.lock
