@@ -28,4 +28,4 @@ Movies is available under the MIT License. See the [LICENSE](https://github.com/
 
 Copyright (c) 2015 Kevin Mindeguia
 
-edit
+edit readme
