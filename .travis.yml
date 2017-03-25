@@ -10,4 +10,4 @@ before_install:
 - gem install fastlane --no-ri --no-doc --no-document
 script:
 - fastlane snapshot --verbose --derived_data_path derivedData --skip_open_summary
-- ~/.local/bin/aws s3 sync ./screenshots s3://appsnap/bcojan/movies3/$TRAVIS_BRANCH/$TRAVIS_BUILD_NUMBER
+- aws s3 sync ./screenshots s3://appsnap/bcojan/movies3/$TRAVIS_BRANCH/$TRAVIS_BUILD_NUMBER
