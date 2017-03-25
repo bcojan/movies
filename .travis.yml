@@ -5,9 +5,8 @@ xcode_scheme: Movies
 notifications:
   webhooks: http://sightr.io/processBuild?apiKey=58bbfa865e4ed2b157ddd921
 before_install:
-- pod install
-- export PATH=$PATH:$HOME/.local/bin
-- pip install --user awscli
+- pip install --upgrade --user awscli
+- export PATH=~/.local/bin:$PATH
 - gem install fastlane --no-ri --no-doc --no-document
 script:
 - fastlane snapshot --verbose --derived_data_path derivedData --skip_open_summary
