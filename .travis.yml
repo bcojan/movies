@@ -3,14 +3,19 @@ language: objective-c
 xcode_workspace: Movies.xcworkspace
 xcode_scheme: Movies
 notifications:
-  webhooks: http://appsnap.appsnap-api.57e44a4b.svc.dockerapp.io/processBuild?apiKey=674a92d5-35c8-41b7-864f-18a0aa10aeb3
+  webhooks: http://sightr.io/processBuild?apiKey=58bbfa865e4ed2b157ddd921
 before_install:
 - pod install
 - gem install fastlane --no-ri --no-doc --no-document
 script: fastlane snapshot --verbose --derived_data_path derivedData --skip_open_summary
-addons:
-  artifacts:
-    s3_region: "eu-west-1"
-    paths:
-      - ./screenshots
-    debug: true
+deploy:
+  provider: s3
+  access_key_id: AKIAIWZPPL3GKJVQ2GOQ
+  secret_access_key:
+    secure: tj5WI2AIj5SHLqa1Z7p10Kc4h5r1QA6260lFzE4Z6avy8W8dIK5Z+pwTmlr6zvXUae1tLOSMBTBXjBWiPVz7zhQVFxxVE0CGfeXP1yrFPDyZMCx9xp6rnvtE4Lu7xPjvsAy78Ri0FBPqqWzT8/TxEqq7siWQ2l7oT4eQdxiF1lMXN6wOALKByxXYoPdljcZDH8/QGkKHJdRIoSTNxN9mcUEXnLl/KBeOd0Ax4GmlTgFEyjVU2s8VhtKac0n/aNWU99nyWanF5RYaQIaeS17ciNDakqAdZoUE2On1Qtuan7ZX+LOfPIaF/OcVPUYNzRqP5U/V+SyykqJjpsd20mhFBv9g/Phdh/rE7XJKc79SrCh0LREyAwG+PI/diSxivnh6wLHU52KqQx6agh4Ee/hePcGeGZOTDne3o0XllIZ6/pL+ujiZr79SAsCnND/JL+S3Zuf5FCHyLaHItq39VOgbTZZJF14EI7OWkaC3VWZo1d04jPHNZTYutClH5rO46331sVo/00ca5+kvsCA0Si424GYuOal98dFnCc8TuTLzY3MmhskKihjeQJFhkpDrgvqlCso7xS0Lu42OJUkBzWDFRprZlo4y2vxZCFSdh+fskEWGqXVRzkmG8Ji9JpHy4f9LO9Epf37xtlhMxAoebSg3BScppNmZvtJcJAoAAu/G/qY=
+  bucket: appsnap
+  local-dir: screenshots
+  upload-dir: bcojan/movies3/$TRAVIS_BRANCH/$TRAVIS_BUILD_NUMBER
+  acl: ''
+  on:
+    repo: bcojan/movies
