@@ -27,5 +27,3 @@ You can play demo at [appetize.io](https://appetize.io/app/va6vwedcp9rn111j1yk5d
 Movies is available under the MIT License. See the [LICENSE](https://github.com/KMindeguia/movies/blob/master/LICENSE.md) for details.
 
 Copyright (c) 2015 Kevin Mindeguia
-
-edit
