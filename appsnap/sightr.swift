@@ -12,72 +12,55 @@ class appsnap: XCTestCase {
         
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
+
         let app = XCUIApplication()
-        app.launchArguments = ["Appsnap_stubbing"] ;
+        app.launchArguments = ["network_stubbing"] ;
         setupSnapshot(app)
         app.launch()
-//        snapshot("setUp")
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-        
-//        snapshot("tearDown")
-    }
     
-    func testExample() {
+    func testSmoketest() {
         
         let app = XCUIApplication()
+        
+        // tap the first cell
         let cells = app.tables.cells
         cells.element(boundBy: 0).tap()
         
+        //Screenshot Rogue One: a star wars story
         snapshot("Rogue One: a star wars story")
         
-        let tablesQuery = app.tables
-        // tap first element
-        tablesQuery.children(matching: .button).element.tap()
-        
-        app.swipeUp()
-        
-//        snapshot("Rogue One: bottom screen")
-        
-        //related movies
+        // tap similar movies
         XCUIApplication().tables.cells.containing(.staticText, identifier:"View all similar movies").buttons["btn round next"].tap()
         
+        // screenshot similar movies
         snapshot("Similar Movies")
         
         //select star wars
         app.collectionViews.children(matching: .cell).element(boundBy: 0).otherElements.children(matching: .image).element(boundBy: 0).tap()
         
+        // snapshot star wars episode IV: a new hope
         snapshot("star wars episode IV: a new hope")
         
         //back to similar movies
-        
         app.buttons["back icon"].tap()
         
+        // snapshot back to similar movies
         snapshot("back to similar movies")
         
+        // select 1st similar movie
         app.navigationBars["Similar Movies"].children(matching: .button).element(boundBy: 0).tap()
         
+        //screenshot back to Rogue on: a star wars story
         snapshot("back to Rogue on: a star wars story")
         
-        //back
+        //go back
         app.buttons["back icon"].tap()
         
+        // screenshot home screen
         snapshot("home screen")
-        
-//        app.swipeUp()
-        
-//        snapshot("home screen bottom")
     }
     
 }

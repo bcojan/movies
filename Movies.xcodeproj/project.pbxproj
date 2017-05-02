@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B2E8B391E12D62D00BBCA58 /* appsnap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2E8B381E12D62D00BBCA58 /* appsnap.swift */; };
+		0B2E8B391E12D62D00BBCA58 /* sightr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2E8B381E12D62D00BBCA58 /* sightr.swift */; };
 		0B2E8B411E12D63900BBCA58 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2E8B401E12D63900BBCA58 /* SnapshotHelper.swift */; };
 		0B2E8B471E12DB9B00BBCA58 /* appsnap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B2E8B461E12DB9B00BBCA58 /* appsnap.bundle */; };
 		0B2E8B481E12DBF400BBCA58 /* SWHttpTrafficRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2E8B441E12D9AB00BBCA58 /* SWHttpTrafficRecorder.m */; };
@@ -88,7 +88,7 @@
 
 /* Begin PBXFileReference section */
 		0B2E8B361E12D62D00BBCA58 /* appsnap.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appsnap.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B2E8B381E12D62D00BBCA58 /* appsnap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appsnap.swift; sourceTree = "<group>"; };
+		0B2E8B381E12D62D00BBCA58 /* sightr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sightr.swift; sourceTree = "<group>"; };
 		0B2E8B3A1E12D62D00BBCA58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B2E8B401E12D63900BBCA58 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		0B2E8B421E12D98F00BBCA58 /* appsnap-bridging-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "appsnap-bridging-header.h"; sourceTree = "<group>"; };
@@ -225,16 +225,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B2E8B371E12D62D00BBCA58 /* appsnap */ = {
+		0B2E8B371E12D62D00BBCA58 /* sightr */ = {
 			isa = PBXGroup;
 			children = (
 				0B2E8B431E12D9AB00BBCA58 /* SWHttpTrafficRecorder.h */,
 				0B2E8B441E12D9AB00BBCA58 /* SWHttpTrafficRecorder.m */,
 				0B2E8B401E12D63900BBCA58 /* SnapshotHelper.swift */,
-				0B2E8B381E12D62D00BBCA58 /* appsnap.swift */,
+				0B2E8B381E12D62D00BBCA58 /* sightr.swift */,
 				0B2E8B3A1E12D62D00BBCA58 /* Info.plist */,
 				0B2E8B421E12D98F00BBCA58 /* appsnap-bridging-header.h */,
 			);
+			name = sightr;
 			path = appsnap;
 			sourceTree = "<group>";
 		};
@@ -265,7 +266,7 @@
 				0BF0E1C81E13D01100B39BC5 /* Snapfile */,
 				7B2F318F18A011A0008CD0DA /* Movies */,
 				7BFB820D1B3C1827001030AC /* MoviesTests */,
-				0B2E8B371E12D62D00BBCA58 /* appsnap */,
+				0B2E8B371E12D62D00BBCA58 /* sightr */,
 				7B2F318818A011A0008CD0DA /* Frameworks */,
 				7B2F318718A011A0008CD0DA /* Products */,
 				2D80EEC1C0AAB332CCE6D79E /* Pods */,
@@ -782,7 +783,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B2E8B391E12D62D00BBCA58 /* appsnap.swift in Sources */,
+				0B2E8B391E12D62D00BBCA58 /* sightr.swift in Sources */,
 				0B2E8B411E12D63900BBCA58 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
