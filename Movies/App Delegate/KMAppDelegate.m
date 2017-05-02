@@ -38,7 +38,7 @@
 //
     
     
-    NSString *stubArg = @"Appsnap_stubbing";
+    NSString *stubArg = @"network_stubbing";
     NSPredicate *p = [NSPredicate predicateWithFormat:@"SELF matches[c] %@", stubArg];
     BOOL stubbing = [[NSProcessInfo processInfo].arguments filteredArrayUsingPredicate:p].count > 0 ;
 
