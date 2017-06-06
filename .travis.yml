@@ -2,15 +2,16 @@ osx_image: xcode8.2
 language: objective-c
 xcode_workspace: Movies.xcworkspace
 xcode_scheme: Movies
-notifications:
-  webhooks: http://appsnap.appsnap-api.57e44a4b.svc.dockerapp.io/processBuild?apiKey=674a92d5-35c8-41b7-864f-18a0aa10aeb3
+# notifications:
+#   webhooks: http://appsnap.appsnap-api.57e44a4b.svc.dockerapp.io/processBuild?apiKey=674a92d5-35c8-41b7-864f-18a0aa10aeb3
 before_install:
 - pod install
 - gem install fastlane --no-ri --no-doc --no-document
+- printenv
 script: fastlane snapshot --verbose --derived_data_path derivedData --skip_open_summary
-addons:
-  artifacts:
-    s3_region: "eu-west-1"
-    paths:
-      - ./screenshots
-    debug: true
+# addons:
+#   artifacts:
+#     s3_region: "eu-west-1"
+#     paths:
+#       - ./screenshots
+#     debug: true
