@@ -18,7 +18,6 @@ project.xcworkspace/
 DerivedData/
 
 Pods/
-screenshots/
 
 # build products
 build/
