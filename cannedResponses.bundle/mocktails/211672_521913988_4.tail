@@ -1,0 +1,91 @@
+GET
+/3/movie/211672\?api_key=.*$
+200
+application/json
+Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+Cache-Control: public, max-age=28800
+X-Memc: HIT
+Access-Control-Allow-Origin: *
+Etag: W/"ff173290bd733a3474dd8562a065ce6a"
+X-RateLimit-Reset: 1500221198
+X-Memc-Expires: 20294
+Vary: Accept-Encoding
+Content-Type: application/json;charset=utf-8
+X-RateLimit-Limit: 40
+Content-Encoding: gzip
+X-Memc-Age: 8506
+Connection: keep-alive
+Server: openresty
+X-Memc-Key: 818ed65206a8ce1f94db949d7489f95b
+Content-Length: 736
+Date: Sun, 16 Jul 2017 16:06:33 GMT
+X-RateLimit-Remaining: 36
+
+{
+  "production_countries" : [
+    {
+      "name" : "United States of America",
+      "iso_3166_1" : "US"
+    }
+  ],
+  "overview" : "Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
+  "status" : "Released",
+  "spoken_languages" : [
+    {
+      "iso_639_1" : "en",
+      "name" : "English"
+    }
+  ],
+  "tagline" : "Before Gru, they had a history of bad bosses",
+  "vote_average" : 6.4,
+  "imdb_id" : "tt2293640",
+  "popularity" : 18.109242,
+  "original_language" : "en",
+  "poster_path" : "\/q0R4crx2SehcEEQEkYObktdeFy.jpg",
+  "production_companies" : [
+    {
+      "id" : 33,
+      "name" : "Universal Pictures"
+    },
+    {
+      "id" : 6704,
+      "name" : "Illumination Entertainment"
+    }
+  ],
+  "adult" : false,
+  "release_date" : "2015-06-17",
+  "runtime" : 91,
+  "original_title" : "Minions",
+  "id" : 211672,
+  "video" : false,
+  "budget" : 74000000,
+  "title" : "Minions",
+  "genres" : [
+    {
+      "id" : 10751,
+      "name" : "Family"
+    },
+    {
+      "id" : 16,
+      "name" : "Animation"
+    },
+    {
+      "id" : 12,
+      "name" : "Adventure"
+    },
+    {
+      "id" : 35,
+      "name" : "Comedy"
+    }
+  ],
+  "vote_count" : 3762,
+  "revenue" : 1156730962,
+  "belongs_to_collection" : {
+    "name" : "Despicable Me Collection",
+    "id" : 86066,
+    "backdrop_path" : "\/15IZl405E664QDVxpFJBl7TtLmw.jpg",
+    "poster_path" : "\/xIXhIlZDRmSSfNbpN7kBCm5hg39.jpg"
+  },
+  "backdrop_path" : "\/uX7LXnsC7bZJZjn048UCOwkPXWJ.jpg",
+  "homepage" : "http:\/\/www.minionsmovie.com\/"
+}

@@ -11,7 +11,8 @@
 #import "KMDiscoverListViewController.h"
 #import "SWHTTpTrafficRecorder.h"
 #import <OHHTTPStubs/OHHTTPStubs.h>
-#import "OHHTTPStubs/OHHTTPStubs+Mocktail.h"
+#import <OHHTTPStubs/OHHTTPStubs+Mocktail.h>
+
 
 @implementation KMAppDelegate
 
@@ -26,35 +27,34 @@
     
     [self.window setRootViewController:navigationController];
     
-    [self setupNavigationTitleLabelStyle];
-    [self setupStatusBarStyle];
+    NSArray *launchArguments = [[NSProcessInfo processInfo] arguments];
     
+    NSString *recordArg = @"record_http_requests";
+    NSPredicate *p = [NSPredicate predicateWithFormat:@"SELF matches[c] %@", recordArg];
+    BOOL record = [launchArguments filteredArrayUsingPredicate:p].count > 0 ;
     
-    //TODO add argument for recording
-//    
-//    [SWHttpTrafficRecorder sharedRecorder].recordingFormat = SWHTTPTrafficRecordingFormatMocktail ;
-//    NSError *error ;
-//    [[SWHttpTrafficRecorder sharedRecorder] startRecordingAtPath:@"/Users/bastien/Desktop/moktails" error:&error];
-//
+    if (record) {
+        [SWHttpTrafficRecorder sharedRecorder].recordingFormat = SWHTTPTrafficRecordingFormatMocktail ;
+        NSError *error ;
+        [[SWHttpTrafficRecorder sharedRecorder] startRecordingAtPath:@"/Users/bastien/Desktop/mocktails" error:&error];
+    }
     
+    NSString *cannedArg = @"canned_responses";
+    NSPredicate *pCanned = [NSPredicate predicateWithFormat:@"SELF matches[c] %@", cannedArg];
+    BOOL stubbing = [launchArguments filteredArrayUsingPredicate:pCanned].count > 0 ;
     
-    NSString *stubArg = @"network_stubbing";
-    NSPredicate *p = [NSPredicate predicateWithFormat:@"SELF matches[c] %@", stubArg];
-    BOOL stubbing = [[NSProcessInfo processInfo].arguments filteredArrayUsingPredicate:p].count > 0 ;
-
     if (stubbing) {
-        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"appsnap" ofType:@"bundle"];
+        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"cannedResponses" ofType:@"bundle"];
         NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
         
         NSError *error;
         [OHHTTPStubs stubRequestsUsingMocktailsAtPath:@"mocktails" inBundle:bundle error:&error];
-
-        [OHHTTPStubs onStubActivation:^(NSURLRequest * _Nonnull request, id<OHHTTPStubsDescriptor>  _Nonnull stub, OHHTTPStubsResponse * _Nonnull responseStub) {
-            NSLog(@"[stub] %@",request.URL.absoluteString);
-        }];
     }
+
     
-    // Override point for customization after application launch.
+    [self setupNavigationTitleLabelStyle];
+    [self setupStatusBarStyle];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

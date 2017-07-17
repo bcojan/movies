@@ -137,6 +137,9 @@
     [cell.timelineImageView sd_setImageWithURL:[NSURL URLWithString:[[self.dataSource objectAtIndex:indexPath.row] movieOriginalBackdropImageUrl]]];
     [cell.titleLabel setText:[[self.dataSource objectAtIndex:indexPath.row] movieTitle]];
     
+    [cell.titleLabel setAccessibilityLabel:cell.titleLabel.text];
+    cell.titleLabel.isAccessibilityElement = YES;
+    
     return cell;
 }
 

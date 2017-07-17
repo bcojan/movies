@@ -145,6 +145,8 @@
     self.imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     self.imageView.clipsToBounds = YES;
     self.imageView.contentMode = self.headerImageViewContentMode;
+    self.imageView.isAccessibilityElement = YES;
+    self.imageView.accessibilityLabel= @"headerimage";
     
     [self insertSubview:self.imageView belowSubview:self.tableView];
     

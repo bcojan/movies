@@ -1,0 +1,420 @@
+GET
+/3/movie/211672/similar\?api_key=.*&page=.*$
+200
+application/json
+Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+Cache-Control: public, max-age=28800
+X-Memc: HIT
+Access-Control-Allow-Origin: *
+Etag: W/"9d7888b6052b6dd965abc5a08c1e3a26"
+X-RateLimit-Reset: 1500221198
+X-Memc-Expires: 25928
+Vary: Accept-Encoding
+Content-Type: application/json;charset=utf-8
+X-RateLimit-Limit: 40
+Content-Encoding: gzip
+X-Memc-Age: 2872
+Connection: keep-alive
+Server: openresty
+X-Memc-Key: 6e28f1325c9e422d024d1b361324b663
+Content-Length: 5416
+Date: Sun, 16 Jul 2017 16:06:33 GMT
+X-RateLimit-Remaining: 35
+
+{
+  "results" : [
+    {
+      "id" : 324852,
+      "genre_ids" : [
+        12,
+        16,
+        35,
+        10751
+      ],
+      "release_date" : "2017-06-29",
+      "title" : "Despicable Me 3",
+      "original_language" : "en",
+      "poster_path" : "\/5qcUGqWoWhEsoQwNUrtf3y3fcWn.jpg",
+      "backdrop_path" : "\/puV2PFq42VQPItaygizgag8jrXa.jpg",
+      "overview" : "The mischievous Minions hope that Gru will return to a life of crime after the new boss of the Anti-Villain League fires him. Instead, Gru decides to remain retired and travel to Freedonia to meet his long-lost twin brother for the first time. The reunited siblings soon find themselves in an uneasy alliance to take down the elusive Balthazar Bratt, a former 1980s child star who seeks revenge against the world.",
+      "vote_average" : 6.2,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 308.098611,
+      "vote_count" : 492,
+      "original_title" : "Despicable Me 3"
+    },
+    {
+      "id" : 20352,
+      "genre_ids" : [
+        16,
+        10751
+      ],
+      "release_date" : "2010-07-08",
+      "title" : "Despicable Me",
+      "original_language" : "en",
+      "poster_path" : "\/4zHJhBSY4kNZXfhTlmy2TzXD51M.jpg",
+      "backdrop_path" : "\/yo1ef57MEPkEE4BDZKTZGH9uDcX.jpg",
+      "overview" : "Villainous Gru lives up to his reputation as a despicable, deplorable and downright unlikable guy when he hatches a plan to steal the moon from the sky. But he has a tough time staying on task after three orphans land in his care.",
+      "vote_average" : 7.1,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 11.98079,
+      "vote_count" : 5928,
+      "original_title" : "Despicable Me"
+    },
+    {
+      "id" : 93456,
+      "genre_ids" : [
+        16,
+        35,
+        10751
+      ],
+      "release_date" : "2013-06-25",
+      "title" : "Despicable Me 2",
+      "original_language" : "en",
+      "poster_path" : "\/kQrYyZQHkwkUg2KlUDyvymj9FAp.jpg",
+      "backdrop_path" : "\/rmgxcw8tGTmdhsWqdjGBS9uI1tO.jpg",
+      "overview" : "Gru is recruited by the Anti-Villain League to help deal with a powerful new super criminal.",
+      "vote_average" : 7,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 9.047669000000001,
+      "vote_count" : 4202,
+      "original_title" : "Despicable Me 2"
+    },
+    {
+      "id" : 1271,
+      "genre_ids" : [
+        28,
+        12,
+        10752
+      ],
+      "release_date" : "2006-12-09",
+      "title" : "300",
+      "original_language" : "en",
+      "poster_path" : "\/bYR8O1H1ZlME7Dm9ysfTYZnRDpw.jpg",
+      "backdrop_path" : "\/oHOTQkTYgDuoCYMaBEzuB9DqguX.jpg",
+      "overview" : "Based on Frank Miller's graphic novel, \"300\" is very loosely based the 480 B.C. Battle of Thermopylae, where the King of Sparta led his army against the advancing Persians; the battle is said to have inspired all of Greece to band together against the Persians, and helped usher in the world's first democracy.",
+      "vote_average" : 7,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 5.902901,
+      "vote_count" : 4567,
+      "original_title" : "300"
+    },
+    {
+      "id" : 53182,
+      "genre_ids" : [
+        28,
+        10752
+      ],
+      "release_date" : "2014-03-05",
+      "title" : "300: Rise of an Empire",
+      "original_language" : "en",
+      "poster_path" : "\/gWQf5j3ZqEfOdW2rIZnkuOOva78.jpg",
+      "backdrop_path" : "\/5Rqhw4e5pRsfWaQBgUlvpWyn1w4.jpg",
+      "overview" : "Based on Frank Miller's latest graphic novel Xerxes and told in the breathtaking visual style of the blockbuster \"300,\" this new chapter of the epic saga takes the action to a fresh battlefield--on the sea--as Greek general Themistokles attempts to unite all of Greece by leading the charge that will change the course of the war. \"300: Rise of an Empire\" pits Themistokles against the massive invading Persian forces led by mortal-turned-god Xerxes and Artemesia, the vengeful commander of the Persian navy.",
+      "vote_average" : 6.1,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 5.64501,
+      "vote_count" : 2218,
+      "original_title" : "300: Rise of an Empire"
+    },
+    {
+      "id" : 350,
+      "genre_ids" : [
+        35,
+        18,
+        10749
+      ],
+      "release_date" : "2006-06-30",
+      "title" : "The Devil Wears Prada",
+      "original_language" : "en",
+      "poster_path" : "\/8unCRm0LeiO0fM6skWAZy3ZfXR1.jpg",
+      "backdrop_path" : "\/2veJf7wcs1hvJGCQRFTwm37djMW.jpg",
+      "overview" : "The Devil Wears Prada is about a young journalist who moves to New York to work in the fashion industry. Her boss however is extremely demanding and cruel and won’t let her succeed if she doesn’t fit into the high class elegant look of their magazine when all she really wants to be a good journalist.",
+      "vote_average" : 7,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 3.820667,
+      "vote_count" : 2668,
+      "original_title" : "The Devil Wears Prada"
+    },
+    {
+      "id" : 366141,
+      "genre_ids" : [
+        16,
+        35,
+        10751
+      ],
+      "release_date" : "2015-11-04",
+      "title" : "Minions: Cro Minion",
+      "original_language" : "en",
+      "poster_path" : "\/9SFFtelj7IPSfMUqVCsq03lcl3s.jpg",
+      "backdrop_path" : "\/rtAT1ItTqTGySXefrmrpOllazws.jpg",
+      "overview" : "Two minions have to babysit a little Neanderthal baby.",
+      "vote_average" : 6.4,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 2.152997,
+      "vote_count" : 18,
+      "original_title" : "Minions: Cro Minion"
+    },
+    {
+      "id" : 9686,
+      "genre_ids" : [
+        35,
+        18,
+        10749
+      ],
+      "release_date" : "1989-03-10",
+      "title" : "New York Stories",
+      "original_language" : "en",
+      "poster_path" : "\/ydzOOOidCSb85N8w11oWNmsP0wU.jpg",
+      "backdrop_path" : "\/jAqvBRC8hGpdQ7nb8rGaER7IQtU.jpg",
+      "overview" : "Three stories happening in New York. The first, by Scorsese, is about a painter who creates his works helped by high volume music and an attractive assistant; second, by Coppola, is about a rich and bold 12 years old who helps her separated parents to reconciliate; third, by Allen, is a witty piece of comedy about the impossibility of getting rid of the son's role.",
+      "vote_average" : 6.2,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 2.949686,
+      "vote_count" : 61,
+      "original_title" : "New York Stories"
+    },
+    {
+      "id" : 3034,
+      "genre_ids" : [
+        35,
+        878
+      ],
+      "release_date" : "1974-12-15",
+      "title" : "Young Frankenstein",
+      "original_language" : "en",
+      "poster_path" : "\/a3Bj2ht6liBFafNM46hqk9WEhcY.jpg",
+      "backdrop_path" : "\/xniibygKalBzJg2yCugPwZCJe31.jpg",
+      "overview" : "A young neurosurgeon inherits the castle of his grandfather, the famous Dr. Victor von Frankenstein. In the castle he finds a funny hunchback, a pretty lab assistant and the elderly housekeeper. Young Frankenstein believes that the work of his grandfather was delusional, but when he discovers the book where the mad doctor described his reanimation experiment, he suddenly changes his mind.",
+      "vote_average" : 7.7,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 2.538687,
+      "vote_count" : 745,
+      "original_title" : "Young Frankenstein"
+    },
+    {
+      "id" : 1944,
+      "genre_ids" : [
+        18
+      ],
+      "release_date" : "2004-07-18",
+      "title" : "The Door in the Floor",
+      "original_language" : "en",
+      "poster_path" : "\/snmS5sgdoVVXY8YJMbrdPAEPuIM.jpg",
+      "backdrop_path" : "\/9zI8K73roVhW1zsJNFlQ0g23G0R.jpg",
+      "overview" : "Alternately tragic and comic, an exploration of the complexities of love in both its brightest and darkest corners. Adapted from John Irving's best-selling novel A Widow for One Year, the film is set in the privileged beach community of East Hampton, New York and chronicles one pivotal summer in the lives of famous children's book author Ted Cole (Jeff Bridges) and his beautiful wife Marion (Kim Basinger). Their once-great marriage has been strained by tragedy. Her resulting despondency and his subsequent infidelities have prevented the couple from confronting a much-needed change in their relationship. Eddie O'Hare, the young man Ted hires to work as his summer assistant, is the couple's unwitting yet willing pawn - and, ultimately, the catalyst in the transformation of their lives.",
+      "vote_average" : 5.9,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 2.49248,
+      "vote_count" : 41,
+      "original_title" : "The Door in the Floor"
+    },
+    {
+      "id" : 403052,
+      "genre_ids" : [
+        35,
+        16
+      ],
+      "release_date" : "2016-07-08",
+      "title" : "Mower Minions",
+      "original_language" : "en",
+      "poster_path" : "\/Ao9clrCn3Ct4a92amHWzfnOCLCh.jpg",
+      "backdrop_path" : "\/2r2pw6qR9E84t21NHxbYXzoEFpi.jpg",
+      "overview" : "The Minions need to raise $20 to purchase an as seen on TV banana blender. So they take up lawn mowing at an old folks home, with hilarious antics!",
+      "vote_average" : 6.6,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 1.462887,
+      "vote_count" : 46,
+      "original_title" : "Mower Minions"
+    },
+    {
+      "id" : 3037,
+      "genre_ids" : [
+        18,
+        10749
+      ],
+      "release_date" : "2007-02-14",
+      "title" : "Yella",
+      "original_language" : "de",
+      "poster_path" : "\/1WEdllY3qZe6lL37QQK7ulc2F61.jpg",
+      "backdrop_path" : "\/69HdXRRp0Dj3Ydv5e0nFXdWcq3C.jpg",
+      "overview" : "A near-death experience causes a woman to relive someone else's final moments.",
+      "vote_average" : 6,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 2.363413,
+      "vote_count" : 14,
+      "original_title" : "Yella"
+    },
+    {
+      "id" : 286558,
+      "genre_ids" : [
+        10751,
+        12,
+        16,
+        35
+      ],
+      "release_date" : "2010-12-15",
+      "title" : "Despicable Me Presents: Minion Madness",
+      "original_language" : "en",
+      "poster_path" : "\/jA1SbD4qty5rtrEB62EJU6ialCQ.jpg",
+      "backdrop_path" : "\/tbdS5DWxsRhVQYjK2OXEy6qGK4l.jpg",
+      "overview" : "3 Mini movies that feature the Minions. Orientation Day, Home Makeover and Banana.",
+      "vote_average" : 6.8,
+      "adult" : false,
+      "video" : true,
+      "popularity" : 1.321753,
+      "vote_count" : 48,
+      "original_title" : "Despicable Me Presents: Minion Madness"
+    },
+    {
+      "id" : 5833,
+      "genre_ids" : [
+        16,
+        10751
+      ],
+      "release_date" : "2000-10-31",
+      "title" : "Casper's Haunted Christmas",
+      "original_language" : "en",
+      "poster_path" : "\/72GvCESvXVrsdrFNM1BknrbKsmz.jpg",
+      "backdrop_path" : "\/2oyWsxAoHvlzDX4YrnqFlRc7N4g.jpg",
+      "overview" : "Kibosh, supreme ruler of all ghosts, decrees that casper must scare at least one person before Christmas Day so Casper visits Kriss, Massachusetts where he meets the Jollimore family and sets out to complete his mission. As usual, kindhearted Casper has a ghastky time trying to scare anyone; so The Ghostly Trio, fed up with his goody-boo-shoes behavior, secretly hires Casper's look-alike cousin Spooky to do the job-with hilarious results.",
+      "vote_average" : 5,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 1.288391,
+      "vote_count" : 28,
+      "original_title" : "Casper's Haunted Christmas"
+    },
+    {
+      "id" : 10776,
+      "genre_ids" : [
+        27,
+        35,
+        10402
+      ],
+      "release_date" : "1986-12-19",
+      "title" : "Little Shop of Horrors",
+      "original_language" : "en",
+      "poster_path" : "\/bxRm8F7rnCsVDyrNh3K9yIFFBKL.jpg",
+      "backdrop_path" : "\/kGOuFe4EJKBcgj4VPodYTFuDAFY.jpg",
+      "overview" : "Seymour Krelborn is a nerdy orphan working at Mushnik's, a flower shop in urban Skid Row. He harbors a crush on fellow co-worker Audrey Fulquard, and is berated by Mr. Mushnik daily. One day as Seymour is seeking a new mysterious plant, he finds a very mysterious unidentified plant which he calls Audrey II. The plant seems to have a craving for blood and soon begins to sing for his supper.",
+      "vote_average" : 6.6,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 2.168316,
+      "vote_count" : 351,
+      "original_title" : "Little Shop of Horrors"
+    },
+    {
+      "id" : 47237,
+      "genre_ids" : [
+        18,
+        35
+      ],
+      "release_date" : "2002-04-18",
+      "title" : "Intimate Affairs",
+      "original_language" : "en",
+      "poster_path" : "\/tprSZOUBYa6PBj63EI1IAZu91SS.jpg",
+      "backdrop_path" : "\/qT5Wv8akdPgyGkeXQfBsGRcSGfw.jpg",
+      "overview" : "When a scholar, is haunted by an overwhelming desire to understand the mystery of sex, he decides to conduct an investigation. With two beautiful assistants joining the case, the stakes are raised.",
+      "vote_average" : 4.8,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 1.706831,
+      "vote_count" : 8,
+      "original_title" : "Investigating Sex"
+    },
+    {
+      "id" : 366142,
+      "genre_ids" : [
+        16
+      ],
+      "release_date" : "2015-11-04",
+      "title" : "Minions: Competition",
+      "original_language" : "en",
+      "poster_path" : "\/d7wrcnERHpa6fA3rhvTllIitGRm.jpg",
+      "backdrop_path" : "\/rsxhLIqVwMxlas5QoXSHcahPyOa.jpg",
+      "overview" : "Two minions working in a bomb lab get competitive.",
+      "vote_average" : 5.9,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 1.351394,
+      "vote_count" : 25,
+      "original_title" : "Minions: Competition"
+    },
+    {
+      "id" : 31064,
+      "genre_ids" : [
+        18,
+        53
+      ],
+      "release_date" : "2001-01-19",
+      "title" : "The Business of Strangers",
+      "original_language" : "en",
+      "poster_path" : "\/wLwSnbTxgs7UUvjUoCUZCFbVQ47.jpg",
+      "backdrop_path" : null,
+      "overview" : "Julie Styron thinks she is going to be fired, but instead discovers that she is being promoted. Trapped in an airport hotel, she wants to celebrate but finds only the company of her young assistant, Paula Murphy. As the night progresses, the two women get to know each other. They flirt, they drink, they lie; personal flaws are revealed and exposed. But at the end of the night their relationship turns and becomes a complex battle of power, authority, and wit.",
+      "vote_average" : 6.1,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 1.293207,
+      "vote_count" : 14,
+      "original_title" : "The Business of Strangers"
+    },
+    {
+      "id" : 31354,
+      "genre_ids" : [
+        18,
+        35,
+        53,
+        80,
+        10769
+      ],
+      "release_date" : "2002-12-17",
+      "title" : "Whatever You Say",
+      "original_language" : "fr",
+      "poster_path" : "\/g7lQgAnn31kp3OXhi8rj2XbWPTs.jpg",
+      "backdrop_path" : "\/sOoswmSSJtZkMeYlXZz5yPpksJq.jpg",
+      "overview" : "Bastien, an ambitious young production assistant, catches the attention of Jean-Louis, a producer of high regard, and is granted a shot at his own television show.",
+      "vote_average" : 5.5,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 1.161027,
+      "vote_count" : 13,
+      "original_title" : "Mon idole"
+    },
+    {
+      "id" : 194083,
+      "genre_ids" : [
+        35
+      ],
+      "release_date" : "2001-07-03",
+      "title" : "Ee Parakkum Thalika",
+      "original_language" : "ml",
+      "poster_path" : "\/6TjlOV565FHsDYdFLAYlMNuWT51.jpg",
+      "backdrop_path" : "\/j0vm1i8LJ9yQtwKsRPvo3DnYQSH.jpg",
+      "overview" : "Unnikrishnan (Dileep) owns an old bus,received as a compensation for his father's road accident and he is facing lots of consequences due to the pathetic condition of the bus. The plot took a turn when a girl named Basanthi (Nithya Das ) entered the bus as a nomad",
+      "vote_average" : 6.7,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 1.095994,
+      "vote_count" : 5,
+      "original_title" : "ഈ പറക്കും തളിക"
+    }
+  ],
+  "page" : 1,
+  "total_pages" : 2,
+  "total_results" : 23
+}

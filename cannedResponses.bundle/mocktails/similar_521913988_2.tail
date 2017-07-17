@@ -1,0 +1,243 @@
+GET
+/3/movie/324852/similar\?api_key=.*&page=.*$
+200
+application/json
+Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+Cache-Control: public, max-age=28800
+X-Memc: HIT
+Access-Control-Allow-Origin: *
+Etag: W/"83c93aa1b3afbcc33d7da52577cc9b02"
+X-RateLimit-Reset: 1500221198
+X-Memc-Expires: 11164
+Vary: Accept-Encoding
+Content-Type: application/json;charset=utf-8
+X-RateLimit-Limit: 40
+Content-Encoding: gzip
+X-Memc-Age: 17636
+Connection: keep-alive
+Server: openresty
+X-Memc-Key: 00600aae8909092aa5967c32c7d140bf
+Content-Length: 2410
+Date: Sun, 16 Jul 2017 16:06:30 GMT
+X-RateLimit-Remaining: 37
+
+{
+  "results" : [
+    {
+      "id" : 211672,
+      "genre_ids" : [
+        10751,
+        16,
+        12,
+        35
+      ],
+      "release_date" : "2015-06-17",
+      "title" : "Minions",
+      "original_language" : "en",
+      "poster_path" : "\/q0R4crx2SehcEEQEkYObktdeFy.jpg",
+      "backdrop_path" : "\/uX7LXnsC7bZJZjn048UCOwkPXWJ.jpg",
+      "overview" : "Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
+      "vote_average" : 6.4,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 19.109242,
+      "vote_count" : 3708,
+      "original_title" : "Minions"
+    },
+    {
+      "id" : 20352,
+      "genre_ids" : [
+        16,
+        10751
+      ],
+      "release_date" : "2010-07-08",
+      "title" : "Despicable Me",
+      "original_language" : "en",
+      "poster_path" : "\/4zHJhBSY4kNZXfhTlmy2TzXD51M.jpg",
+      "backdrop_path" : "\/yo1ef57MEPkEE4BDZKTZGH9uDcX.jpg",
+      "overview" : "Villainous Gru lives up to his reputation as a despicable, deplorable and downright unlikable guy when he hatches a plan to steal the moon from the sky. But he has a tough time staying on task after three orphans land in his care.",
+      "vote_average" : 7.1,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 11.98079,
+      "vote_count" : 5911,
+      "original_title" : "Despicable Me"
+    },
+    {
+      "id" : 93456,
+      "genre_ids" : [
+        16,
+        35,
+        10751
+      ],
+      "release_date" : "2013-06-25",
+      "title" : "Despicable Me 2",
+      "original_language" : "en",
+      "poster_path" : "\/kQrYyZQHkwkUg2KlUDyvymj9FAp.jpg",
+      "backdrop_path" : "\/rmgxcw8tGTmdhsWqdjGBS9uI1tO.jpg",
+      "overview" : "Gru is recruited by the Anti-Villain League to help deal with a powerful new super criminal.",
+      "vote_average" : 7,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 9.047669000000001,
+      "vote_count" : 4192,
+      "original_title" : "Despicable Me 2"
+    },
+    {
+      "id" : 366141,
+      "genre_ids" : [
+        16,
+        35,
+        10751
+      ],
+      "release_date" : "2015-11-04",
+      "title" : "Minions: Cro Minion",
+      "original_language" : "en",
+      "poster_path" : "\/9SFFtelj7IPSfMUqVCsq03lcl3s.jpg",
+      "backdrop_path" : "\/rtAT1ItTqTGySXefrmrpOllazws.jpg",
+      "overview" : "Two minions have to babysit a little Neanderthal baby.",
+      "vote_average" : 6.5,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 2.152997,
+      "vote_count" : 13,
+      "original_title" : "Minions: Cro Minion"
+    },
+    {
+      "id" : 1271,
+      "genre_ids" : [
+        28,
+        12,
+        10752
+      ],
+      "release_date" : "2006-12-09",
+      "title" : "300",
+      "original_language" : "en",
+      "poster_path" : "\/bYR8O1H1ZlME7Dm9ysfTYZnRDpw.jpg",
+      "backdrop_path" : "\/oHOTQkTYgDuoCYMaBEzuB9DqguX.jpg",
+      "overview" : "Based on Frank Miller's graphic novel, \"300\" is very loosely based the 480 B.C. Battle of Thermopylae, where the King of Sparta led his army against the advancing Persians; the battle is said to have inspired all of Greece to band together against the Persians, and helped usher in the world's first democracy.",
+      "vote_average" : 7,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 5.902901,
+      "vote_count" : 4417,
+      "original_title" : "300"
+    },
+    {
+      "id" : 403052,
+      "genre_ids" : [
+        35,
+        16
+      ],
+      "release_date" : "2016-07-08",
+      "title" : "Mower Minions",
+      "original_language" : "en",
+      "poster_path" : "\/Ao9clrCn3Ct4a92amHWzfnOCLCh.jpg",
+      "backdrop_path" : "\/2r2pw6qR9E84t21NHxbYXzoEFpi.jpg",
+      "overview" : "The Minions need to raise $20 to purchase an as seen on TV banana blender. So they take up lawn mowing at an old folks home, with hilarious antics!",
+      "vote_average" : 6.9,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 1.462887,
+      "vote_count" : 40,
+      "original_title" : "Mower Minions"
+    },
+    {
+      "id" : 53182,
+      "genre_ids" : [
+        28,
+        10752
+      ],
+      "release_date" : "2014-03-05",
+      "title" : "300: Rise of an Empire",
+      "original_language" : "en",
+      "poster_path" : "\/gWQf5j3ZqEfOdW2rIZnkuOOva78.jpg",
+      "backdrop_path" : "\/5Rqhw4e5pRsfWaQBgUlvpWyn1w4.jpg",
+      "overview" : "Based on Frank Miller's latest graphic novel Xerxes and told in the breathtaking visual style of the blockbuster \"300,\" this new chapter of the epic saga takes the action to a fresh battlefield--on the sea--as Greek general Themistokles attempts to unite all of Greece by leading the charge that will change the course of the war. \"300: Rise of an Empire\" pits Themistokles against the massive invading Persian forces led by mortal-turned-god Xerxes and Artemesia, the vengeful commander of the Persian navy.",
+      "vote_average" : 6.1,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 5.64501,
+      "vote_count" : 2217,
+      "original_title" : "300: Rise of an Empire"
+    },
+    {
+      "id" : 286558,
+      "genre_ids" : [
+        10751,
+        12,
+        16,
+        35
+      ],
+      "release_date" : "2010-12-15",
+      "title" : "Despicable Me Presents: Minion Madness",
+      "original_language" : "en",
+      "poster_path" : "\/jA1SbD4qty5rtrEB62EJU6ialCQ.jpg",
+      "backdrop_path" : "\/tbdS5DWxsRhVQYjK2OXEy6qGK4l.jpg",
+      "overview" : "3 Mini movies that feature the Minions. Orientation Day, Home Makeover and Banana.",
+      "vote_average" : 6.9,
+      "adult" : false,
+      "video" : true,
+      "popularity" : 1.321753,
+      "vote_count" : 44,
+      "original_title" : "Despicable Me Presents: Minion Madness"
+    },
+    {
+      "id" : 366142,
+      "genre_ids" : [
+        16
+      ],
+      "release_date" : "2015-11-04",
+      "title" : "Minions: Competition",
+      "original_language" : "en",
+      "poster_path" : "\/d7wrcnERHpa6fA3rhvTllIitGRm.jpg",
+      "backdrop_path" : "\/rsxhLIqVwMxlas5QoXSHcahPyOa.jpg",
+      "overview" : "Two minions working in a bomb lab get competitive.",
+      "vote_average" : 6,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 1.351394,
+      "vote_count" : 23,
+      "original_title" : "Minions: Competition"
+    },
+    {
+      "id" : 332114,
+      "genre_ids" : [
+
+      ],
+      "release_date" : "2014-10-16",
+      "title" : "Ich einfach unverbesserlich - 6 Mini-Movies Collection",
+      "original_language" : "en",
+      "poster_path" : "\/azTvibz3r4MfFBRRIPpKvYSkO78.jpg",
+      "backdrop_path" : "\/dhgL84nUSkDyTW1yBXvidUL6yJe.jpg",
+      "overview" : null,
+      "vote_average" : 7.3,
+      "adult" : false,
+      "video" : true,
+      "popularity" : 1.075109,
+      "vote_count" : 3,
+      "original_title" : "Ich einfach unverbesserlich - 6 Mini-Movies Collection"
+    },
+    {
+      "id" : 187591,
+      "genre_ids" : [
+        27
+      ],
+      "release_date" : "2007-01-01",
+      "title" : "666 (Beware the End Is at Hand)",
+      "original_language" : "en",
+      "poster_path" : "\/x6lGdXZgodeNi4QkelyWcB31A8p.jpg",
+      "backdrop_path" : null,
+      "overview" : "Lucifer sends his trusty minions out into the world to lead the good folk of Nigeria unto temptation in order to lock them into his cage. The good pastor Lazarus who has noticed the signs, realizing that hell is about to be unleashed on Earth, sets about righting wrongs through the power of prayer.",
+      "vote_average" : 0,
+      "adult" : false,
+      "video" : false,
+      "popularity" : 1.002742,
+      "vote_count" : 0,
+      "original_title" : "666 (Beware the End Is at Hand)"
+    }
+  ],
+  "page" : 1,
+  "total_pages" : 1,
+  "total_results" : 11
+}

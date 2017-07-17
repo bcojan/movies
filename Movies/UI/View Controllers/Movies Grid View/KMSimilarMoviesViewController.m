@@ -88,6 +88,7 @@
     KMMoviePosterCell* cell = (KMMoviePosterCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"KMMoviePosterCell" forIndexPath:indexPath];
     
     [cell.moviePosterImageView sd_setImageWithURL:[NSURL URLWithString:[[self.moviesDataSource objectAtIndex:indexPath.row] movieOriginalPosterImageUrl]]];
+    cell.accessibilityLabel = [[self.moviesDataSource objectAtIndex:indexPath.row] movieTitle];
     
     return cell;
 }

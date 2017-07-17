@@ -1,0 +1,87 @@
+GET
+/3/movie/324852\?api_key=.*$
+200
+application/json
+Access-Control-Expose-Headers: ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After
+Cache-Control: public, max-age=28800
+X-Memc: HIT
+Access-Control-Allow-Origin: *
+Etag: W/"fa088bd7dcb43b174bc69fc1d2cd6ee6"
+X-RateLimit-Reset: 1500221198
+X-Memc-Expires: 10225
+Vary: Accept-Encoding
+Content-Type: application/json;charset=utf-8
+X-RateLimit-Limit: 40
+Content-Encoding: gzip
+X-Memc-Age: 18575
+Connection: keep-alive
+Server: openresty
+X-Memc-Key: 5a19e78d075171cb43d5bde7286f153a
+Content-Length: 641
+Date: Sun, 16 Jul 2017 16:06:29 GMT
+X-RateLimit-Remaining: 38
+
+{
+  "production_countries" : [
+    {
+      "name" : "United States of America",
+      "iso_3166_1" : "US"
+    }
+  ],
+  "overview" : "Gru and his wife Lucy must stop former '80s child star Balthazar Bratt from achieving world domination.",
+  "status" : "Released",
+  "spoken_languages" : [
+    {
+      "iso_639_1" : "en",
+      "name" : "English"
+    }
+  ],
+  "tagline" : "",
+  "vote_average" : 6.1,
+  "imdb_id" : "tt3469046",
+  "popularity" : 307.098611,
+  "original_language" : "en",
+  "poster_path" : "\/5qcUGqWoWhEsoQwNUrtf3y3fcWn.jpg",
+  "production_companies" : [
+    {
+      "id" : 6704,
+      "name" : "Illumination Entertainment"
+    }
+  ],
+  "adult" : false,
+  "release_date" : "2017-06-29",
+  "runtime" : 96,
+  "original_title" : "Despicable Me 3",
+  "id" : 324852,
+  "video" : false,
+  "budget" : 0,
+  "title" : "Despicable Me 3",
+  "genres" : [
+    {
+      "id" : 12,
+      "name" : "Adventure"
+    },
+    {
+      "id" : 16,
+      "name" : "Animation"
+    },
+    {
+      "id" : 35,
+      "name" : "Comedy"
+    },
+    {
+      "id" : 10751,
+      "name" : "Family"
+    }
+  ],
+  "vote_count" : 490,
+  "revenue" : 0,
+  "belongs_to_collection" : {
+    "name" : "Despicable Me Collection",
+    "id" : 86066,
+    "backdrop_path" : "\/15IZl405E664QDVxpFJBl7TtLmw.jpg",
+    "poster_path" : "\/xIXhIlZDRmSSfNbpN7kBCm5hg39.jpg"
+  },
+  "backdrop_path" : "\/puV2PFq42VQPItaygizgag8jrXa.jpg",
+  "homepage" : "http:\/\/www.despicable.me"
+}

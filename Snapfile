@@ -2,20 +2,12 @@
 
 # A list of devices you want to take the screenshots from
 devices([
-   "iPhone 6",
-   "iPhone 6 Plus",
-   "iPhone 5",
-   "iPhone 7",
-  #  "iPhone 7 Plus",
-#   "iPad Pro (12.9 inch)",
-# "iPad Pro (9.7-inch)",
-#   "Apple TV 1080p"
+  "iPhone 6",
+  "iPhone 5",
 ])
 
 languages([
   "en-US"
-# "it-IT",
-#  ["pt", "pt_BR"] # Portuguese with Brazilian locale
 ])
 
 # The name of the scheme which contains the UI Tests
@@ -30,8 +22,8 @@ clear_previous_screenshots true # remove the '#' to clear all previously generat
 # project "./Project.xcodeproj"
 workspace "./Movies.xcworkspace"
 
-# Arguments to pass to the app on launch. See https://github.com/fastlane/snapshot#launch-arguments
+# Arguments to pass to the app on launch. See https://github.com/fastlane/fastlane/tree/master/snapshot#launch-arguments
 # launch_arguments(["-favColor red"])
 
 # For more information about all available options run
-# snapshot --help
+# fastlane snapshot --help
