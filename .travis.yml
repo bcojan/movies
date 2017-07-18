@@ -3,4 +3,5 @@ language: objective-c
 cache: pip
 install:
   - pip install awscli
-deploy: curl "https://api.sightr.io/uploadscript?repoKey=5967d97a44d0b1001532f5fd&branch=$TRAVIS_BRANCH&ci=travis&build=$TRAVIS_BUILD_NUMBER&directory=screenshots&commit=$TRAVIS_COMMIT" | bash
+deploy: 
+  - curl "https://api.sightr.io/uploadscript?repoKey=5967d97a44d0b1001532f5fd&branch=$TRAVIS_BRANCH&ci=travis&build=$TRAVIS_BUILD_NUMBER&directory=screenshots&commit=$TRAVIS_COMMIT" | bash
