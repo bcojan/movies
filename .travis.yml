@@ -2,7 +2,7 @@ osx_image: xcode8.2
 language: objective-c
 before_install:
   - pip install --upgrade pip
-  - pip install --user awscli
+  - pip install --verbose --user awscli
   - export PATH=$PATH:$HOME/.local/bin
   - echo $PATH
   - $HOME/.local/bin/aws s3
