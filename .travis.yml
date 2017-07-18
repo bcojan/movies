@@ -1,12 +1,13 @@
 osx_image: xcode8.2
 language: objective-c
-before_install:
-  - pip install --upgrade pip
-  - pip install --verbose --user awscli
-  - export PATH=$PATH:$HOME/.local/bin
-  - echo $PATH
-  - $HOME/.local/bin/aws s3
-  # - pod install
-  # - gem install fastlane --no-ri --no-doc --no-document
-# script: fastlane snapshot --verbose --derived_data_path derivedData --skip_open_summary
-script: curl "https://api.sightr.io/uploadscript?repoKey=5967d97a44d0b1001532f5fd&branch=$TRAVIS_BRANCH&ci=travis&build=$TRAVIS_BUILD_NUMBER&directory=screenshots&commit=$TRAVIS_COMMIT" | bash
+cache:
+  - pip
+  - cocoapods
+install:
+  - pip install awscli
+  - gem install fastlane --no-ri --no-doc --no-document
+  - pod install
+script: 
+  - fastlane snapshot --verbose --derived_data_path derivedData --skip_open_summary
+after_success:
+  - curl "https://api.sightr.io/uploadscript?repoKey=5967d97a44d0b1001532f5fd&branch=$TRAVIS_BRANCH&ci=travis&build=$TRAVIS_BUILD_NUMBER&directory=screenshots&commit=$TRAVIS_COMMIT" | bash
