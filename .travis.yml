@@ -5,7 +5,7 @@ before_install:
   - pip install --verbose --user awscli
   - export PATH=$PATH:$HOME/.local/bin
   - echo $PATH
-  - $HOME/.local/bin/aws s3
+  - aws s3
   # - pod install
   # - gem install fastlane --no-ri --no-doc --no-document
 # script: fastlane snapshot --verbose --derived_data_path derivedData --skip_open_summary
