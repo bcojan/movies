@@ -10,5 +10,4 @@ install:
 script:
   - fastlane snapshot --verbose --derived_data_path derivedData --skip_open_summary
 after_success:
-  - curl "https://api.sightr.io/uploadscript?repoKey=596e7f656abe96000f798955&branch=$TRAVIS_BRANCH&ci=travis&build=$TRAVIS_BUILD_NUMBER&directory=screenshots&commit=$TRAVIS_COMMIT" | bash
-  
+  - bash <(curl -s https://demo.sightr.io/bash) -t 596e7f656abe96000f798955 -d screenshots
